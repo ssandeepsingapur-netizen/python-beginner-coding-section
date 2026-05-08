@@ -1,11 +1,20 @@
-class animal:
-    def sound(self):
-        print("animal makes sound")
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
-class Dog(animal):
-    def bark(self):
-        print("dog barks")
+choice = input("Enter operation (+,-,*,/): ")
 
-d = Dog()
-d.sound()
-d.bark()
+match choice:
+    case "+":
+        print("Result:", num1 + num2)
+
+    case "-":
+        print("Result:", num1 - num2)
+
+    case "*":
+        print("Result:", num1 * num2)
+
+    case "/":
+        print("Result:", num1 / num2)
+
+    case _:
+        print("Invalid Operation")
