@@ -1,7 +1,11 @@
-my_str = input("Enter a string")
+dict = {"name": "sandeep" ," age": 19 ,"weight" :45 }
 
-words = [word.capitalize() for word in my_str.split()]
-words.sort()
-print("The sorted wordsare")
-for word in words:
-    print(word)
+print(dict.keys())
+print(dict.values())
+print(dict.items())
+
+
+
+str = "sandeep singapur"
+
+print(str.strip())
