@@ -1,17 +1,15 @@
-def factorial(n):
-    if n == 1:
-        return 1
-    else:
-        return n*factorial(n-1)
-print(factorial(5))
+students = int(input("enter number of students"))
+hungry = bool(False)
 
+if students>= 90:
+    print('Today we make biryani')
+elif students>= 80:
+    if hungry== True:
+        print("today also make biryani")
+    else: 
+        print("today making uppito")
 
-
-def outer_function(name):
-    print(f"Hello {name}")
-    def inner_innerfunction():
-        print(f"This is inner function")
-        inner_innerfunction()
-outer_function("sandy")
-
-        
+elif students>=60:
+    print("today number of student less so we make rice and sambar")
+elif students>=50:
+    print("today we not make food so please eat outside")
