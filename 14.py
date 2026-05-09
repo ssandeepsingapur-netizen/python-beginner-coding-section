@@ -1,16 +1,14 @@
-def total_sum(*numbers):
-    result = 0
-    for num in numbers:
-        result += num
-    return result
-print(total_sum(1, 2, 3, 4, 5))
+n = 10
+l = []
 
+for i in range(n):
+    val = int(input("enter any numbers"))
+    l.append(val)
 
-
-
-
-def student_info(** details):
-    for key, value in details.items():
-        print(f"{key}: {value}")
-
-student_info(name="Alice", age=20, grade="A")
+print(l)
+print(l.insert(2,15))
+print(l.remove(4))
+print(l.pop(1))
+print(l.index(10))
+print(l.count(5))
+print(l.sort())
