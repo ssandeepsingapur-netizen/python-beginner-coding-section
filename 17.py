@@ -1,10 +1,20 @@
-punctuation = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
-my_str = input("Enter a string")
+n =int(input("enter number")) 
+try:
+    divide = 10/n
+    print(divide)
+except (ZeroDivisionError,ValueError) as e:
+    print("error we cannot divide by using this",e)
 
-no_punct =""
-for char in my_str:
-    if char not in punctuations:
-        no_punct = no_punct + char
+
+age = int(input("enetr age"))
+
+try:
+  if age>18:
+    print("eligible")
+except ValueError:
+    print("valid input")
 
 
-print(no_punct)
+
+
+
