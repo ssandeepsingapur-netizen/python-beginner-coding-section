@@ -1,10 +1,10 @@
-class book:
-    def __init__(self, title, author="unknown"):
-        self.title = title
-        self.author = author
-    def display_info(self):
-        print(f"Title: {self.title}, Author: {self.author}")
-book1 = book("The Great Gatsby", "F. Scott Fitzgerald")
-book2 = book("To Kill a Mockingbird")
-book1.display_info()
-book2.display_info()
+def count(string,substring):
+    count = 0
+    for i in range(len(string)-len(substring)+1):
+        if string[i:i+len(substring)] == substring:
+            count += 1
+    return count
+
+string = input("Enter the string: ")
+substring = input("Enter the substring: ")
+print(count(string, substring))
