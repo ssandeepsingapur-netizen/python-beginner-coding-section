@@ -1,24 +1,11 @@
+import datetime
 
-file = open("demo.txt", "w")
-file.write("hello sndy how are you?")
-file.close()
+now = datetime.datetime.now()
+print(now)
 
-
-file = open("demo.txt", "r")
-data = file.read()
-file.close()
-print(data)
-
-file = open("demo.txt", "a")
-file.write(" I am fine.")
-file.close()
-
-file = open("demo.txt", "r")
-
-data = file.read()
-
-new_data = data.replace(" ", "")
-
-print(new_data)
-
-file.close()
+if now.hour > 12:
+    print("Good afternoon!")
+elif 12<= now.hour < 18:
+    print("Good evening!")
+else:
+    print("Good night!")
