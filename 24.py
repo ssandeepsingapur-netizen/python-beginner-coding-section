@@ -1,10 +1,15 @@
-class person:
-    def __init__ (self, name, age):
-        self.name = name
-        self.age = age
-    def greet(self):
-        print(f"Hello,my name is {self.name} and I am {self.age} years old.")
-person1 = person("Alice", 30)
-person2 = person("ashwini", 18)
-person1.greet()
-person2.greet()
+file = open("sample.txt", "r")
+info = file.read()
+print(info)
+file.close()
+
+file = open("sample.txt", "a")
+new_info = input("enter the new information to add to the file: ")
+file.write(new_info + "\n")
+file.close()
+
+file  = open("sample.txt", "w+")
+file.write("This is a new line of text.\n")
+file.seek(0)
+print(file.read())
+file.close()
