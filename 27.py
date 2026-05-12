@@ -1,19 +1,29 @@
-import math
+num = int(input("enter a number: "))
+match num:
+    case 1:
+        print("one")
+    case 2:
+        print("two")
+    case 3:
+        print("three")
+    case 4:
+        print("four")
+    case 5:
+        print("five")
+    case _:
+        print("number not in range")
 
-num = 25
 
-print("Square Root:", math.sqrt(num))
-print("Power:", math.pow(2, 3))
-print("Factorial:", math.factorial(5))
+age = int(input("enter your age: "))
 
-
-import random
-print("Random Numbers between 1 and 10:", random.randint(1, 10))
-print("Random Float between 0 and 1:", random.random())
-
-import calendar
-
-year = 2026
-month = 6
-
-print(calendar.month(year, month))
+match age:
+    case age if age <18:
+        print("you are a minor")
+    case age if age >= 18 and age < 25:
+        print("you are a young guy")
+    case age if age >= 25 and age < 60:
+        print("you are an adult")
+    case age if age >= 60 and age < 100:
+        print("you are a senior citizen")
+    case _:
+        print("invalid age")
