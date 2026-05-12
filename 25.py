@@ -1,11 +1,4 @@
-class Dog :
-    def __init__ (self, name, breed):
-        self.name = name
-        self.breed = breed
-    def bark(self):
-        print(f"{self.name} says barking!")
+import webbrowser
 
-Dog1 = Dog("rex", "beedi nayi")
-Dog2 = Dog("tommy", "german shepherd")
-Dog1.bark()
-Dog2.bark()
+print("click the link to open the website")
+webbrowser.open("https://www.linkedin.com/in/sandeep-singapur-2021023a8/")
