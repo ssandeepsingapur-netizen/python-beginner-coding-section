@@ -1,12 +1,8 @@
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def display(self):
-        print("Name:", self.name)
-        print("Age:", self.age)
-
-# Creating object
-s1 = Student("Rahul", 20)
-s1.display()
+N = int(input("enter a number: ")) #heart pattern
+for i in range(N):
+    for j in range(N):
+        if (i == 0 and j % 3 != 0) or (i == 1 and j % 3 == 0) or (i - j == 2) or (i + j == 8):
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()
