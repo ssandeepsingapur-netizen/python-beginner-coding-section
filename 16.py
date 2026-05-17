@@ -1,11 +1,4 @@
-dict = {"name": "sandeep" ," age": 19 ,"weight" :45 }
-
-print(dict.keys())
-print(dict.values())
-print(dict.items())
-
-
-
-str = "sandeep singapur"
-
-print(str.strip())
+import math
+def area_of_circle(radius):
+    return math.pi*radius**2
+print(area_of_circle(5))
