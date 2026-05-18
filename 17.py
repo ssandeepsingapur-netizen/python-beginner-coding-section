@@ -1,20 +1,24 @@
-n =int(input("enter number")) 
-try:
-    divide = 10/n
-    print(divide)
-except (ZeroDivisionError,ValueError) as e:
-    print("error we cannot divide by using this",e)
-
-
-age = int(input("enetr age"))
-
-try:
-  if age>18:
-    print("eligible")
-except ValueError:
-    print("valid input")
-
-
-
-
-
+list = int(input("enter the number of elements in the list: "))
+my_list = []
+for i in range (list):
+    element = int(input("enter the element:"))
+    my_list.append(element)
+print("the list is:", my_list)
+my_list.sort()
+print("the sorted list is:", my_list)
+print("the smallest element in the list  is:", my_list[0])
+print("The largest number is:", my_list[-1])
+print("Replace the number at index 2:",my_list[2])
+my_list.insert(2, 10)
+print("the list after replacing the number at index 2 is:", my_list)
+my_list.remove(3)
+print("the list after removing the number 3 is:", my_list)
+print(my_list[1:4])#from starting index 1 to ending index 3
+my_list.pop()
+print("the list after popping the last element is:", my_list)
+my_list.append(20)
+print("the list after appending the number 20 is:", my_list)
+my_list.reverse()
+print("the list after reversing is:", my_list)
+my_list.clear()
+print("the list after clearing all elements is:", my_list)
