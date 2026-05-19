@@ -1,7 +1,11 @@
-def check_year(year):
-    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-        print(f"{year} is a leap year.")
-    else:
-        print(f"{year} is not a leap year.")
+string = input("enter a string")
+substring = input("enter substring")
+string.split()
+substring.split()
+print(len(string))
+print(len(substring))
+for i in range(len(string)):
+    if substring in string:
+        substring+=0   
 
-check_year(2026)
+ 
