@@ -1,15 +1,6 @@
-file = open("sample.txt", "r")
-info = file.read()
-print(info)
-file.close()
-
-file = open("sample.txt", "a")
-new_info = input("enter the new information to add to the file: ")
-file.write(new_info + "\n")
-file.close()
-
-file  = open("sample.txt", "w+")
-file.write("This is a new line of text.\n")
-file.seek(0)
-print(file.read())
-file.close()
+try:
+    file = open("sample.txt" 'W')
+    file.write("This is created file")
+    file.close()
+except FileNotFoundError:
+    print("this not found check again created or not")
