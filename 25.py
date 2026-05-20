@@ -1,4 +1,5 @@
-import webbrowser
+import math as mp
 
-print("click the link to open the website")
-webbrowser.open("https://www.linkedin.com/in/sandeep-singapur-2021023a8/")
+print(mp.sqrt(25))
+print(mp.factorial(23))
+print(mp.sin(90))
