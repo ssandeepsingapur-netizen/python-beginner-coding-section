@@ -1,9 +1,27 @@
-class Car:
-   def __init__ (self, brand, model):
-       self.brand = brand
-       self.model = model
-   def display_info(self):
-       print(f"car brand: {self .brand}, model:{self.model}")
+a=int(input("enter the number"))
+b =int(input("enter the number"))
+try:
+    divide = a/b
+    print(divide)
+except ZeroDivisionError:
+    print("Not possible divide")
+
+except ValueError:
+    print("Give  only numbers")#
+
+def fun(a,b):
+    if a==b:
+        print("this recursion function")
+    elif a>=b:
+        a = a-b
+       
+        print(a,b)
+        return fun(a,b)
+    elif a<=b:
+        b= b-a
+        print(a,b)
+        return fun(a,b)
     
-my_car =Car("Toyota","camry")
-my_car.display_info()
+
+fun(5,4)
+
