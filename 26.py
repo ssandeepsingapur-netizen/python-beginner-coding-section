@@ -1,11 +1,22 @@
-import datetime
+class student:
+    def __init__(self, name):
+        self.name = name
+        print(self.name)       
+        
 
-now = datetime.datetime.now()
-print(now)
+def fun():
+    s1 = student("john")
+    return 
 
-if now.hour > 12:
-    print("Good afternoon!")
-elif 12<= now.hour < 18:
-    print("Good evening!")
-else:
-    print("Good night!")
+
+ 
+fun()  
+
+str = "hello world"
+for i in range(len(str)):
+    if i == 0:
+        print(str[i].upper(), end="")
+    elif i == 6:
+        print(str[i].upper(), end="")
+    else:
+        print(str[i], end="")
