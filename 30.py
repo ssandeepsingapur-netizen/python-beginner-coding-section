@@ -1,8 +1,11 @@
-N = int(input("enter a number: ")) #heart pattern
-for i in range(N):
-    for j in range(N):
-        if (i == 0 and j % 3 != 0) or (i == 1 and j % 3 == 0) or (i - j == 2) or (i + j == 8):
-            print("*", end="")
-        else:
-            print(" ", end="")
-    print()
+students= int(input("enter number of students"))
+
+subjects = int(input("enter number of subject"))
+
+for i in range(subjects):
+    name_of_sub = input("enter name")
+    marks = int(input("enter the marks"))
+    
+
+print(sum(marks))
+
