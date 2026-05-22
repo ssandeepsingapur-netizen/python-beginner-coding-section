@@ -1,8 +1,14 @@
-row = 5
+row = int(input("enter number rows"))
+columns =int(input("enter number coluns"))
 
 for i in range(row):
-    for j in range(row - i - 1):#5-0-1,5-1-1,5-2-1,5-3-1,5-4-1
-        print(" ", end= " ")
-    for k in range(2 * i + 1):#1,3,5,7,9
-        print("*", end= " ")
-    print()
+        if i == 2:
+              print("*")
+              continue
+        for i in range(columns):
+            if i == 3:
+                print("#" ,end=" ")
+                continue
+
+
+
