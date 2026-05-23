@@ -1,9 +1,9 @@
-class bankaccount:
-    def __init__ (self,balance):
-        self._balance = balance
-    def deposite(self, amount):
-        return self._balance
+import numpy as np
+A = np.array([0,1])
+B = np.array([2,3])
+print(np.inner(A,B))
+
+
+
+
     
-acc =bankaccount(10000)
-acc.deposite(500)
-print("balance",acc.get_balance())
