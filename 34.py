@@ -1,7 +1,16 @@
-def full_name(first_name, last_name):
-    result=(first_name+" "+last_name)
-    print(result)
+#s = input("enter a sentence: ")#
+#words = s.split()
+#for i in range(len(words)):
+    #if words[i] == 0:#
+        
 
-first_name = input("enter first your name")
-last_name = input("enter second name")
-full_name(first_name,last_name)
+N = int(input("enter a number"))
+l = []
+for i in range(N):
+    val = input("enter a value: ")
+    l.append(val)
+print(l)
+l.remove("6")
+print(l)
+l.reverse()
+print(l)
