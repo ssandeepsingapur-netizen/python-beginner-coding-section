@@ -1,20 +1,25 @@
-N = int(input("Enter "))
-commands = []
-for x in range(N):
-        commands.append(input().split())
-output = []
-for x in commands:
-        if x[0] == 'insert':
-            output.insert(int(x[1]), int(x[2]))
-        elif x[0] == 'print':
-            print(output)
-        elif x[0] == 'remove':
-            output.remove(int(x[1]))
-        elif x[0] == 'append':
-            output.append(int(x[1]))
-        elif x[0] == 'sort':
-            output.sort()
-        elif x[0] == 'pop':
-            output.pop()
-        elif x[0] == 'reverse':
-            output.reverse()
+text = input("Enter the a paragraph")
+lower_text = text.lower()
+words = lower_text.split()
+word_count = len(words)
+char_count = len(text)
+sentence_count  = text.count('.')+text.count('!')+text.count('?')
+
+longest_word = max(words,key = len)
+frequency = {}
+
+for word in words:
+    word = word.strip(", ! ?")
+    if word in frequency:
+        frequency[word]+=1
+    else:
+        frequency[word] = 1
+
+print("\n ---Text analysis result ---")
+print("number of words:",word_count)
+print("Number of charcters",char_count)
+print("Number of sentence:",sentence_count)
+print("Longest word",longest_word)
+print("\n word frequency")
+for word,count in frequency.items():
+    print("word :",word,"count :",count)
